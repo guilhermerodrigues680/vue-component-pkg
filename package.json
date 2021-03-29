@@ -1,11 +1,27 @@
 {
-  "name": "first-vue-component-library",
+  "name": "@guilhermerodrigues680/vue-component-pkg",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "dist/vue-component-pkg.umd.min.js",
+  "unpkg": "dist/vue-component-pkg.umd.min.js",
+  "jsdelivr": "dist/vue-component-pkg.umd.min.js",
+  "keywords": [
+    "vue",
+    "component",
+    "package"
+  ],
+  "author": "guilhermerodrigues680 <guilhermerodrigues680@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guilhermerodrigues680/vue-component-pkg/issues"
+  },
+  "homepage": "https://github.com/guilhermerodrigues680/vue-component-pkg#readme",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "vue-cli-service build --target lib --name vue-component-pkg src/main.js",
+    "build-old": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "prepublishOnly": "$npm_execpath build"
   },
   "dependencies": {
     "core-js": "^3.6.5",
