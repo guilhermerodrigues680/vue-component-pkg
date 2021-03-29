@@ -1,6 +1,6 @@
 {
   "name": "@guilhermerodrigues680/vue-component-pkg",
-  "version": "0.1.0",
+  "version": "0.1.1-0",
   "private": false,
   "main": "dist/vue-component-pkg.umd.min.js",
   "unpkg": "dist/vue-component-pkg.umd.min.js",
