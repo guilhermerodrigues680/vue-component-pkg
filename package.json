@@ -18,7 +18,9 @@
   "homepage": "https://github.com/guilhermerodrigues680/vue-component-pkg#readme",
   "scripts": {
     "serve": "vue-cli-service serve",
+    "http-server": "http-server",
     "build": "vue-cli-service build --target lib --name vue-component-pkg src/main.js",
+    "build-watch": "vue-cli-service build  --watch --target lib --name vue-component-pkg src/main.js",
     "build-old": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "prepublishOnly": "$npm_execpath build"
@@ -34,6 +36,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "http-server": "^0.12.3",
     "vue-template-compiler": "^2.6.11"
   }
 }
